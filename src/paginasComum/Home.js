@@ -7,6 +7,9 @@ const Home = () => {
       <Link to="/contact">
         <h2>contato</h2>
       </Link>
+      <Link to="/estilos">
+        <h2>estilos</h2>
+      </Link>
     </>
   );
 };

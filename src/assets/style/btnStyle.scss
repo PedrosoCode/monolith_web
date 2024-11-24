@@ -1,0 +1,78 @@
+@import 'sassvar';
+
+// Estilos comuns para todos os botões
+.btnBase {
+  background-color: $btn_background-comum;
+  color: $btn_texto-comum;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $btn_hover-comum;
+  }
+
+  &:active {
+    background-color: $btn_active-comum;
+  }
+}
+
+// Estilo específico para o botão Editar
+.btnEditar {
+  @extend .btnBase; // Reusa os estilos da classe .btnBase
+  background-color: $btn_editar_background-comum;
+  color: $btn_editar_texto-comum;
+
+  &:hover {
+    background-color: $btn_editar_hover-comum;
+  }
+
+  &:active {
+    background-color: $btn_editar_active-comum;
+  }
+
+  .fontIcon {
+    margin-left: 8px; // Espaço entre o texto e o ícone
+  }
+}
+
+// Estilo específico para o botão Excluir
+.btnExcluir {
+  @extend .btnBase;
+  background-color: $btn_excluir-background-comum;
+  color: $btn_excluir-texto-comum;
+
+  &:hover {
+    background-color: $btn_excluir-hover-comum;
+  }
+
+  &:active {
+    background-color: $btn_excluir-active-comum;
+  }
+
+  .fontIcon {
+    margin-left: 8px; // Espaço entre o texto e o ícone
+  }
+}
+
+// Estilo específico para o botão Salvar
+.btnSalvar {
+  @extend .btnBase;
+  background-color: $btn_background-comum;
+  color: $btn_texto-comum;
+
+  &:hover {
+    background-color: $btn_hover-comum;
+  }
+
+  &:active {
+    background-color: $btn_active-comum;
+  }
+
+  .fontIcon {
+    margin-left: 8px; // Espaço entre o texto e o ícone
+  }
+}
